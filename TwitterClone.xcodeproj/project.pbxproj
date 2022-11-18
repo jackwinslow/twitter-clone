@@ -26,6 +26,11 @@
 		343290422926004B00CAFD26 /* UserStatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343290412926004B00CAFD26 /* UserStatsView.swift */; };
 		3432904729271D8600CAFD26 /* NewTweetView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3432904629271D8600CAFD26 /* NewTweetView.swift */; };
 		3432904929271E4C00CAFD26 /* TextArea.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3432904829271E4C00CAFD26 /* TextArea.swift */; };
+		3432904E292725CA00CAFD26 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3432904D292725CA00CAFD26 /* LoginView.swift */; };
+		34329051292725E400CAFD26 /* RegistrationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34329050292725E400CAFD26 /* RegistrationView.swift */; };
+		343290532927275500CAFD26 /* RoundedShape.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343290522927275500CAFD26 /* RoundedShape.swift */; };
+		34329055292740B200CAFD26 /* CustomInputField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34329054292740B200CAFD26 /* CustomInputField.swift */; };
+		343290582927421400CAFD26 /* AuthHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 343290572927421400CAFD26 /* AuthHeaderView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -49,6 +54,11 @@
 		343290412926004B00CAFD26 /* UserStatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserStatsView.swift; sourceTree = "<group>"; };
 		3432904629271D8600CAFD26 /* NewTweetView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NewTweetView.swift; sourceTree = "<group>"; };
 		3432904829271E4C00CAFD26 /* TextArea.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextArea.swift; sourceTree = "<group>"; };
+		3432904D292725CA00CAFD26 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		34329050292725E400CAFD26 /* RegistrationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrationView.swift; sourceTree = "<group>"; };
+		343290522927275500CAFD26 /* RoundedShape.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShape.swift; sourceTree = "<group>"; };
+		34329054292740B200CAFD26 /* CustomInputField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomInputField.swift; sourceTree = "<group>"; };
+		343290572927421400CAFD26 /* AuthHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthHeaderView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +114,7 @@
 		342183BD2915770A00F378D2 /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				3432904A292725A800CAFD26 /* Authentication */,
 				342183C3291626EB00F378D2 /* Components */,
 				3432904329271D6C00CAFD26 /* UploadTwet */,
 				343290362925FE7E00CAFD26 /* SideMenu */,
@@ -141,9 +152,12 @@
 		342183C3291626EB00F378D2 /* Components */ = {
 			isa = PBXGroup;
 			children = (
+				343290562927420A00CAFD26 /* Authentication */,
 				343290332925FC3800CAFD26 /* Users */,
 				342183C9291B000100F378D2 /* Tweets */,
 				3432904829271E4C00CAFD26 /* TextArea.swift */,
+				343290522927275500CAFD26 /* RoundedShape.swift */,
+				34329054292740B200CAFD26 /* CustomInputField.swift */,
 			);
 			path = Components;
 			sourceTree = "<group>";
@@ -312,6 +326,39 @@
 			path = Views;
 			sourceTree = "<group>";
 		};
+		3432904A292725A800CAFD26 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				3432904B292725B400CAFD26 /* ViewModel */,
+				3432904C292725BE00CAFD26 /* Views */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
+		3432904B292725B400CAFD26 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		3432904C292725BE00CAFD26 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				3432904D292725CA00CAFD26 /* LoginView.swift */,
+				34329050292725E400CAFD26 /* RegistrationView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		343290562927420A00CAFD26 /* Authentication */ = {
+			isa = PBXGroup;
+			children = (
+				343290572927421400CAFD26 /* AuthHeaderView.swift */,
+			);
+			path = Authentication;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -386,6 +433,7 @@
 				3432902D29254C8200CAFD26 /* ProfileView.swift in Sources */,
 				342183B22915769B00F378D2 /* ContentView.swift in Sources */,
 				3432903C2925FEA600CAFD26 /* SideMenuOptionRowView.swift in Sources */,
+				34329055292740B200CAFD26 /* CustomInputField.swift in Sources */,
 				342183CB291B002300F378D2 /* TweetsRowView.swift in Sources */,
 				3432902F292550A500CAFD26 /* TweetFilterViewModel.swift in Sources */,
 				342183C8291627D700F378D2 /* FeedView.swift in Sources */,
@@ -394,7 +442,11 @@
 				3432902529254B6500CAFD26 /* ExploreView.swift in Sources */,
 				3432904929271E4C00CAFD26 /* TextArea.swift in Sources */,
 				3432903F2925FEB800CAFD26 /* SideMenuViewModel.swift in Sources */,
+				3432904E292725CA00CAFD26 /* LoginView.swift in Sources */,
+				34329051292725E400CAFD26 /* RegistrationView.swift in Sources */,
 				3432904729271D8600CAFD26 /* NewTweetView.swift in Sources */,
+				343290582927421400CAFD26 /* AuthHeaderView.swift in Sources */,
+				343290532927275500CAFD26 /* RoundedShape.swift in Sources */,
 				343290352925FC4700CAFD26 /* UserRowView.swift in Sources */,
 				3432901E29254A3200CAFD26 /* MainTabView.swift in Sources */,
 				3432902729254B7F00CAFD26 /* NotificationsView.swift in Sources */,
